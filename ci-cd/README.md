@@ -63,4 +63,31 @@ After registration, you may want to customize the runner’s configuration file 
 
 ```bash
 sudo vi /etc/gitlab-runner/config.toml
+```
+
+## GitLab Runner Setup with Docker Executor
+
+--
+
+This guide will install Docker, configure it for GitLab Runner, and verify the Docker setup.
+
+```bash
+# 1. Install Docker
+sudo apt update
+sudo apt install -y docker.io
+
+# 2. Check Docker service status
+sudo systemctl status docker
+
+# 3. Add the GitLab Runner user to the Docker group
+# (Required to allow GitLab Runner to access Docker)
+sudo usermod -aG docker gitlab-runner
+
+# 4. Restart Docker to apply group changes
+sudo systemctl restart docker
+
+# 5. Verify Docker installation by listing Docker images
+# (This should return an empty list if no images are downloaded yet)
+sudo docker images
+
 

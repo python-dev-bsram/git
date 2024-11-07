@@ -52,6 +52,10 @@ Run the registration command to link your runner with GitLab. During registratio
 | **Executor** | The method GitLab Runner uses to run jobs. Options include: <br> - `docker` <br> - `shell` <br> - `virtualbox` <br> - `ssh` <br> - `kubernetes` <br> - `custom` | Select based on your environment (e.g., `docker` for containerized builds). |
 
 ---
+## Check GitLab Runner Settings:
+
+After registering runner with requireured credentilas follow to open gitlab >settings >ci/cd > Runnner. If you obeserve in the Image there are tags and Label which need to configure in the `gitlab-ci.yml` 
+![image](https://github.com/user-attachments/assets/3384e164-7e09-4af1-9a9b-232101bf491d)
 
 ## Configuring the Runner
 

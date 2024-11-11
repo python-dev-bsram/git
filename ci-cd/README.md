@@ -89,5 +89,38 @@ sudo systemctl restart docker
 # 5. Verify Docker installation by listing Docker images
 # (This should return an empty list if no images are downloaded yet)
 sudo docker images
+```
 
+## SSH Configuration in GitLab
+
+
+
+### Step 1: Generate SSH Key
+
+In Linux, execute the following command to generate an SSH key:
+
+```bash
+ssh-keygen -t rsa -b 2048 -C "name of key" -y
+```
+
+### Step 2: Copy the SSH Key
+
+Now, open the .ssh/id_rsa.pub file to view your SSH public key. You can use the cat or vim command:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+### Step 3: Add SSH Key in GitLab
+In GitLab, go to the top navigation and click on your user profile.
+- Go to Preferences > SSH Keys.
+- Paste the copied SSH key in the Key field.
+- Add a Title and Expiration date if required.
+
+### Step 4: Verify SSH Key Addition
+
+To ensure the SSH key was added properly, use the following command:
+```bash
+ssh -T git@domain.com
+```
 

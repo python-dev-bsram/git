@@ -8,9 +8,22 @@ Git is a distributed version control system that allows developers to track chan
 
 ## Usage of Git
 - **Version Control**: Keeps track of changes made to files over time, allowing developers to revert to previous versions if needed.
+
+
 - **Collaboration**: Facilitates teamwork by allowing multiple contributors to work on the same project without overwriting each other's changes.
+
+![image](https://github.com/user-attachments/assets/7449fec0-97bb-4a3f-b362-07bde70f3113)
+
 - **Branching**: Allows developers to create separate branches for features, fixes, or experiments. Changes can be merged back to the main branch once they're stable.
+
+![image](https://github.com/user-attachments/assets/713349e2-d86f-4fb4-a25e-c0ea6f79697f)
+
+
 - **Remote Repositories**: Supports remote repositories hosted on platforms like GitHub, GitLab, or Bitbucket, making it easier to share code and collaborate with others.
+
+![image](https://github.com/user-attachments/assets/f6fc95e3-d4bd-4fcb-827f-9092fbf67ef9)
+
+
 - **Change History**: Maintains a complete history of changes, which can be reviewed or audited later.
 
 ## Advantages of Git
